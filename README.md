@@ -14,7 +14,7 @@ ctest --test-dir build --output-on-failure
 ./build/typist101 --lesson lessons/lu-xun-leifeng-simplified.txt
 ```
 
-For a local Arch package, commit your changes, then run `./scripts/package-arch.sh`; the package is written to `dist/`. Sample texts are in [lessons](lessons/README.md). Drag any UTF-8 file of up to 1 MiB into the window to load it. Progress lives under `$XDG_STATE_HOME/typist101` or `~/.local/state/typist101`.
+On Arch, commit your changes and run `./scripts/install-arch.sh` to build and install the package. Use `./scripts/package-arch.sh` to build it without installing; the package is written to `dist/`. Sample texts are in [lessons](lessons/README.md). Drag any UTF-8 file of up to 1 MiB into the window to load it. Progress lives under `$XDG_STATE_HOME/typist101` or `~/.local/state/typist101`.
 
 ## Controls
 
