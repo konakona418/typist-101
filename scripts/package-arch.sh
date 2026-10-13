@@ -12,4 +12,4 @@ checksum=$(sha256sum "$work/typist101-$version.tar.gz" | cut -d ' ' -f 1)
 sed "s/sha256sums=('SKIP')/sha256sums=('$checksum')/" "$root/PKGBUILD" > "$work/PKGBUILD"
 
 mkdir -p "$root/dist"
-(cd "$work" && PKGDEST="$root/dist" makepkg --noconfirm)
+(cd "$work" && PKGDEST="$root/dist" makepkg --noconfirm --force)

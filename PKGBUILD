@@ -7,6 +7,7 @@ arch=('x86_64')
 license=('GPL-3.0-only' 'Zlib')
 depends=('sdl3' 'fontconfig' 'libepoxy')
 makedepends=('cmake' 'ninja' 'gcc' 'pkgconf')
+options=('!debug')
 source=("$pkgname-$pkgver.tar.gz")
 sha256sums=('SKIP') # scripts/package-arch.sh sets the archive checksum.
 
